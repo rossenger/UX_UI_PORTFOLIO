@@ -25,13 +25,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.loaderAnimationContainer {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 3;
-}
-
 .loaderBackground {
     width: 100vw;
     height: 100vh;
@@ -423,6 +416,11 @@ header {
     background-color: white;
 }
 
+.projectGridContainer a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
 
 .projectGridContainer {
     margin: 0 auto;
@@ -498,10 +496,6 @@ header {
     font-size: 16px;
     line-height: 93.5%;
     text-align: center;
-}
-
-.projectGridContainer a {
-    -webkit-tap-highlight-color: transparent;
 }
 
 .projectButton:hover {
@@ -787,6 +781,65 @@ header {
     height: 178.75px;
 }
 
+.npoSection {
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+.jumbotron {
+    height: 219px;
+    background-image: url(../images/npo/hero.jpg);
+    background-size: cover;
+}
+
+.jumbotron .display-4 {
+    font-family: 'elza-narrow';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 82.99%;
+    color: #414042;
+    width: 629px;
+    text-shadow: 0px 4px 4px rgba(65, 64, 66, 0.25);
+    padding-left: 123px;
+    padding-top: 46px;
+}
+
+.jumbotron .lead {
+    font-family: 'elza-narrow';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 93.49%;
+    color: #414042;
+    text-shadow: 0px 4px 4px rgba(65, 64, 66, 0.25);
+    padding-left: 123px;
+    padding-top: 7px;
+}
+
+.npoCaseStudy {
+    background-color: white;
+    height: auto;
+}
+
+.previewImage {
+    padding-top: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.previewImage img {
+    width: 781px;
+    height: 369px;
+}
+
+
+.projectSummary p {
+    width: 608px;
+}
 
 footer {
     background-color: #414042;
@@ -794,6 +847,7 @@ footer {
     width: 100%;
     text-align: center;
     padding-bottom: 10px;
+    bottom: 0;
 }
 
 .linkedInLogo {
@@ -841,22 +895,201 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding-top: 20px;
+    bottom: 0;
 }
 
-.resumeContainer {
+.getInTouch {
     display: flex;
     justify-content: center;
     padding-top: 45px;
-    padding-bottom: 45px;
-    padding-left: 24px;
-    padding-right: 24px;
 }
 
-.resumeContainer img {
-    width: 100%;
-    max-width: 1034px;
-    height: auto;
+.getInTouch h1 {
+    font-family: 'elza-narrow', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 43px;
+    line-height: 133%;
+    color: #FFFFFF;
 }
+
+.contactIconContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+}
+
+.contactGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactGroup img {
+    padding-bottom: 20px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #bbb5af;
+  }
+  
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: #bbb5af;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::placeholder, textarea::focus:placeholder {
+    color: #bbb5af;
+  }
+  
+  input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color: #bbb5af;
+  }
+  
+  /* on hover placeholder */
+  
+  input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::placeholder, textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::placeholder, textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+    color: #cbc6c1;
+  }
+  
+  body {
+    font-family: 'elza-narrow', sans-serif;
+    background: #414042;
+    color: white;
+  }
+  
+
+  
+  #form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+  }
+  
+  input {
+    font-family: 'elza-narrow', sans-serif;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+    outline: none;
+    color: #726659;
+    
+    border: solid 1px white;
+    border-bottom: none;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  input:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+  }
+  
+  textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: #ffffff;
+    font-family: 'elza-narrow', sans-serif;
+    font-size: 0.875em;
+    
+    border: solid 1px white;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  textarea:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+  }
+  
+  #submit {
+    width: 502px;
+    
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    
+    font-family: 'elza-narrow', sans-serif;
+    font-size: 0.875em;
+    color: #b3aca7;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 1px white;
+    border-top: none;
+  }
+  
+  #submit:hover {
+    color: #e2dedb;
+  }
+
 
 @media only screen and (max-width: 1200px) {
     .heroSection {
@@ -1123,10 +1356,6 @@ footer {
         text-align: center;
         color: #FFFFFF;
     }
-
-    .aboutMeSection {
-        padding-top: 0px;
-    }
     
 
     .aboutMeContainer {
@@ -1136,7 +1365,6 @@ footer {
         margin-right: 30px;
         justify-content: space-evenly;
         align-items: center;
-        padding-top: 25px;
     }
 
     #aboutMePicture {
@@ -1183,10 +1411,6 @@ footer {
         padding-top: 81px;
         transform: translateY(5px);
     }
-
-    .skillsSection {
-        padding-top: 100px;
-    }
     
 
     
@@ -1211,10 +1435,9 @@ footer {
         flex-direction: column;
         align-items: center;
         padding-top: 100px;
-        padding-bottom: 200px;
     }
     
-    #toolsContainer p {
+    #toolssContainer p {
         word-wrap:break-word;
         max-width: 475px;
         text-align: center;
@@ -1229,14 +1452,39 @@ footer {
         width: 100%;
     }
 
+    .jumbotron .display-4 {
+        font-family: 'elza-narrow';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 54px;
+        line-height: 82.99%;
+        color: #414042;
+        width: 629px;
+        text-shadow: 0px 4px 4px rgba(65, 64, 66, 0.25);
+        padding-left: 60px;
+        padding-top: 46px;
+    }
+    
+    .jumbotron .lead {
+        font-family: 'elza-narrow';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 93.49%;
+        color: #414042;
+        text-shadow: 0px 4px 4px rgba(65, 64, 66, 0.25);
+        padding-left: 60px;
+        padding-top: 7px;
+    }
+
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
 }
 
 @media only screen and (max-width: 600px) {
-
-.loaderBackground img {
-    width: 200px;
-    height: 200px;
-}
 
 .navbarContainer {
     display: none;
@@ -1412,49 +1660,6 @@ padding-bottom: 16px;
     padding-bottom: 50px;
 }
 
-#downloadButtonContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    height: 40px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-#downloadButton {
-    background-color: #414042;
-    color: white;
-    border-radius: 5px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    font-family: 'elza-narrow';
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 93.5%;
-    text-align: center;
-}
-
-#downloadButton:hover {
-    background-color: #99D5CA;
-    color: #414042;
-    border-radius: 5px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    font-family: 'elza-narrow';
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 93.5%;
-    text-align: center;
-}
-
 .skillsSection {
     padding-top: 100px;
 }
@@ -1488,5 +1693,48 @@ padding-bottom: 16px;
     padding: 50px 50px 100px 50px;
 }
 
+.jumbotron {
+    height: 219px;
+    background-image: url(../images/npo/hero.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+.jumbotron .display-4 {
+    font-family: 'elza-narrow';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 82.99%;
+    color: #414042;
+    width: 350px;
+    text-shadow: 0px 4px 4px rgba(65, 64, 66, 0.25);
+    padding-left: 16px;
+    padding-top: 74px;
+}
+
+.jumbotron .lead {
+    font-family: 'elza-narrow';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 93.49%;
+    color: #414042;
+    text-shadow: 0px 4px 4px rgba(65, 64, 66, 0.25);
+    padding-left: 16px;
+    padding-top: 4px;
+}
+
+.contactIconContainer {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer {
+   
+    bottom: 0;
+}
 
 }

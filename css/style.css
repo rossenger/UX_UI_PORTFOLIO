@@ -593,7 +593,7 @@ header {
 
 #aboutMePicture {
     width: 395px;
-    background-image: url(../images/about_me_picture.jpg);
+    background-image: url(../images/portrait.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     padding-right: 18px;
@@ -1142,7 +1142,7 @@ footer {
     #aboutMePicture {
         width: 395px;
         height: 532px;
-        background-image: url(../images/about_me_picture.jpg);
+        background-image: url(../images/portrait.jpeg);
         background-size: cover;
         padding-right: 18px;
     }
@@ -1356,7 +1356,7 @@ footer {
 
 #aboutMePicture {
 width: 328px;
-background-image: url(../images/about_me_picture.jpg);
+background-image: url(../images/portrait.jpeg);
 background-size: cover;
 background-repeat: no-repeat;
 padding-right: 18px;

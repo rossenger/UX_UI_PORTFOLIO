@@ -432,8 +432,8 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-        "npoCard blmCard"
-        "goalAssistantCard trvlCard"
+        "trvlCard npoCard"
+        "blmCard goalAssistantCard"
     ;
 }
 
@@ -563,8 +563,8 @@ header {
 }
 
 .trvlImage {
-    width: 462px;
-    height: 257px;
+    width: 501px;
+    height: 193px;
 }
 
 
@@ -915,10 +915,10 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
+            "trvlCard"
             "npoCard"
             "blmCard"
             "goalAssistantCard" 
-            "trvlCard"
         ;
     }
 
@@ -1316,10 +1316,10 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
+        "trvlCard"
         "npoCard"
         "blmCard"
         "goalAssistantCard" 
-        "trvlCard"
     ;
 }
 
@@ -1399,7 +1399,7 @@ footer {
 
 .trvlImage {
     width: 358px;
-    height: 195px;
+    height: 138px;
 }
 
 #aboutMePicture {

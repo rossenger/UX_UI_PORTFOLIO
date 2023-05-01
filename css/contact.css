@@ -1729,12 +1729,32 @@ padding-bottom: 16px;
 .contactIconContainer {
     display: flex;
     flex-direction: column;
-    
+    padding-bottom: 60px;
 }
 
 footer {
-   
+    
     bottom: 0;
 }
+
+#form {
+    display: none;
+  }
+
+.getInTouch {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contactGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
 
 }

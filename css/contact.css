@@ -848,6 +848,7 @@ footer {
     text-align: center;
     padding-bottom: 10px;
     bottom: 0;
+
 }
 
 .linkedInLogo {
@@ -1481,7 +1482,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 footer {
     bottom: 0;
-    position: absolute;
+    
 }
 
 @media only screen and (max-width: 600px) {

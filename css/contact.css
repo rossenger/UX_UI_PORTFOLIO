@@ -847,7 +847,7 @@ footer {
     width: 100%;
     text-align: center;
     padding-bottom: 10px;
-    bottom: 0;
+    
 }
 
 .linkedInLogo {
@@ -895,7 +895,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding-top: 20px;
-    bottom: 0;
+    
 }
 
 .getInTouch {
